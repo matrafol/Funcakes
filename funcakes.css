@@ -24,6 +24,13 @@ h2, h3, .item_header{color: #eb268f;}
 }
 	.buttons:hover{background-color: #eb268f;}
 
+.menu_items, #services{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /****************************** Navigation ********************************/
 
 #main_nav{
@@ -71,13 +78,7 @@ h2, h3, .item_header{color: #eb268f;}
 }
 	.menu_filter:hover{background-color: #eb268f;}
 
-.menu_items{
-	padding: 2em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+.menu_items{padding: 2em;}
 
 .item{
 	width: 300px;
@@ -102,13 +103,6 @@ h2, h3, .item_header{color: #eb268f;}
 		border-top-right-radius: 0.3em;
 		border-top-left-radius: 0.3em;
 	}
-
-#services{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 
 .services_item{
 	width: 250px;
