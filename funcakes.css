@@ -79,6 +79,9 @@ h2, h3, .item_header{color: #eb268f;}
 	.menu_filter:hover{background-color: #eb268f;}
 
 .menu_items{padding: 2em;}
+	section.cookies, section.breads, section.cupcakes{
+		display: none;
+	}
 
 .item{
 	width: 300px;
