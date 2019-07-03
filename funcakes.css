@@ -68,7 +68,7 @@ h2, h3, .item_header{color: #eb268f;}
 	width: 100%;
 	padding: 3em 0;
 }
-	.content_container:nth-child(odd){background-color: #DFF6FF;}
+	.content_container:nth-child(odd){background-color: #ABE6ED;}
 
 .menu_filter{
 	padding: 0.3em;
@@ -123,6 +123,22 @@ h2, h3, .item_header{color: #eb268f;}
 	.services_item .buttons{
 		font-size: 1.5em;
 	}
+
+#scroll_up_container{
+	position: absolute;
+	font-size: 3em;
+	right: 6%;
+	bottom: 12%;
+}
+	#scroll_up{
+		position: fixed;
+		height: 4rem;
+		width: 4rem;
+		border-radius: 50%;
+		opacity: 0.5;;
+		padding: 0;
+	}
+		#scroll_up:hover{opacity: 1;}
 
 /****************************** Footer ********************************/
 
