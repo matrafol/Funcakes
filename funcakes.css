@@ -84,6 +84,7 @@ h2, h3, .item_header{color: #eb268f;}
 	}
 
 .item{
+	position: relative;
 	width: 300px;
 	border: 1px solid black;
 	border-radius: 0.3em;
@@ -106,6 +107,20 @@ h2, h3, .item_header{color: #eb268f;}
 		border-top-right-radius: 0.3em;
 		border-top-left-radius: 0.3em;
 	}
+
+.new_item{
+	position: absolute;
+	color: white;
+	background-color: #eb268f;
+	text-transform: uppercase;
+
+	padding: 0.2em;
+	font-size: 1.2em;
+	border-bottom-right-radius: 0.3em;
+	border-bottom-left-radius: 0.3em;
+	left: 5%;
+	width: 20%;
+}
 
 .services_item{
 	width: 250px;
