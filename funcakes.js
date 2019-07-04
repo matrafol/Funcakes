@@ -4,7 +4,7 @@ const menuItems = document.getElementsByClassName('menu_items');
 const menu = document.getElementsByClassName('nav_links')[1];
 const services = document.getElementsByClassName('nav_links')[2];
 const contactUs = document.getElementsByClassName('nav_links')[3];
-const scrollUp = document.getElementById('scroll_up');
+const scrollUp = document.getElementById('scroll_up_container');
 
 // Get the index of menuFilter or menuItems
 // Set the display of all index to none except that index
@@ -76,9 +76,9 @@ function smoothScroll(targetElement, duration){
 	var navigation = document.getElementById('navigation');
 
 	if(window.pageYOffset > navigation.getBoundingClientRect().height){
-		scrollUp.style.display = 'block';
+		scrollUp.style.visibility = 'visible';
 	} else{
-		scrollUp.style.display = 'none';
+		scrollUp.style.visibility = 'hidden';
 	}
 	requestAnimationFrame(toggleScrollUp);
 }());
@@ -102,3 +102,17 @@ scrollUp.addEventListener('click', function(e){
 	smoothScroll('#main_nav', 1000);
 	e.preventDefault();
 });
+
+const item = document.getElementsByClassName('item new');
+
+(function newItemTag(){
+	for (var i = 0; i < item.length; i++) {
+		var newItemTag = document.createElement("span");
+		newItemTag.innerHTML = 'New';
+		newItemTag.className = "new_item";
+		// Append the tag as the first child
+		item[i].insertAdjacentElement('afterbegin', newItemTag);
+	}
+}());
+
+
