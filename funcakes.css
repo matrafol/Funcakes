@@ -128,7 +128,7 @@ h2, h3, .item_header{color: #eb268f;}
 	display: none;
 }
 
-.image_modal{
+/*.image_modal{
 	width: 50%;
 	height: 70%;
 	margin: auto;
@@ -145,6 +145,7 @@ h2, h3, .item_header{color: #eb268f;}
 		width: 100%;
 		height: 100%;
 	}
+*/
 
 .services_item{
 	width: 250px;
