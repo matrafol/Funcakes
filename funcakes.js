@@ -50,7 +50,8 @@ function smoothScroll(targetElement, duration){
 		
 		var timeElapsed = currentTime - startTime;
 		var run = easeAnimation(timeElapsed, startPosition, distance, duration);
-		window.scrollTo(0, run);	
+		// x position and y position
+		window.scrollTo(0, run);
 			
 		if(timeElapsed < duration) {
 			// requestAnimationFrame is a method that updates the content everytime
@@ -103,16 +104,46 @@ scrollUp.addEventListener('click', function(e){
 	e.preventDefault();
 });
 
-const item = document.getElementsByClassName('item new');
+const newItem = document.getElementsByClassName('item new');
+const item = document.getElementsByClassName('item');
 
 (function newItemTag(){
-	for (var i = 0; i < item.length; i++) {
+	for (var i = 0; i < newItem.length; i++) {
 		var newItemTag = document.createElement("span");
-		newItemTag.innerHTML = 'New';
+		newItemTag.innerText = 'New';
 		newItemTag.className = "new_item";
 		// Append the tag as the first child
-		item[i].insertAdjacentElement('afterbegin', newItemTag);
+		newItem[i].insertAdjacentElement('afterbegin', newItemTag);
 	}
 }());
+
+// Create image modal upon click
+
+for (var i = 0; i < item.length; i++) {
+	item[i].addEventListener('click', function(e){
+		var imageSource = this.getElementsByTagName('img')[0].src;
+
+		var modal = document.createElement("div");
+		modal.className = "image_modal_container";
+		modal.innerHTML = '<div class="image_modal">' +
+									'<a href="#" class="close_button">&times;</a>' +
+									'<img src="'+ imageSource +'">' +
+						   '</div>' +
+						'</div>';
+
+		// Append child to the section menu_items
+		this.parentNode.appendChild(modal);
+
+		document.getElementsByClassName('close_button')[0].addEventListener('click', function(e){
+			document.getElementsByClassName("image_modal_container")[0].remove();
+			e.preventDefault();
+		});
+	});
+
+	
+}
+
+
+
 
 
