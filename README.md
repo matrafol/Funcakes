@@ -5,6 +5,7 @@ A landing page for a fictional bakery Funcakes.
   * Filter elements
   * Smooth scroll animation
   * Image modal
+  * Parallax background
   
 # Tools
   * HTML
