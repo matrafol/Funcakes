@@ -32,6 +32,12 @@ h2, h3, .item_header{color: #eb268f;}
 	justify-content: center;
 }
 
+.description{
+	line-height: 1.4em;
+	font-family: tahoma;
+	font-size: 0.9em;
+}
+
 /****************************** Navigation ********************************/
 
 #main_nav{
@@ -44,21 +50,19 @@ h2, h3, .item_header{color: #eb268f;}
 }
 
 #navigation{
-	max-height: 50px;
 	padding: 2em 7rem;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	background: rgba(0,0,0,0.3);
 }
-	#left_nav img{width: 5rem; height: 100%;}
+	#left_nav img{width: 6.5rem; height: 100%;}
 
-	#right_nav{padding: 0.5em;}
+	#right_nav{padding: 0.5em; margin: auto 0;}
 		.nav_links{color: white;}
 			.nav_links:hover{color: #eb268f;}
 	#nav_welcome{
 		width: 80%;
-		margin: 15% auto;
+		margin: 13% auto;
 		color: white;
 		font-size: 2em;
 	}
@@ -76,10 +80,16 @@ h2, h3, .item_header{color: #eb268f;}
 		background-attachment: fixed;
 	}
 
+.menu_filter{
+	border-radius: 0.5em;
+	padding: 0.2em 0.3em;
+}
+
 .menu_items{padding: 2em;}
 	section.cookies, section.breads, section.cupcakes{
 		display: none;
 	}
+
 
 .item{
 	position: relative;
@@ -97,8 +107,9 @@ h2, h3, .item_header{color: #eb268f;}
 	.item_header{
 		display: flex;
 		justify-content: space-between;
-		padding: 1em;
 		font-weight: bold;
+		font-size: 1.1em;
+		padding: 0.6em 0.8em;
 	}
 	.item p{
 		text-align: left; 
@@ -204,6 +215,7 @@ h2, h3, .item_header{color: #eb268f;}
 }
 .info{
 	margin: 1em 0;
+	font-size: 1.2em;
 }
 	.info i{margin-right: 1em;}
 
